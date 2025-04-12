@@ -1,0 +1,17 @@
+model:
+  name: fcn_resnet50
+  weights: None
+  weights_backbone: None
+  aux_loss: true
+  num_classes: 2
+
+predict:
+  checkpoint: ./results/train/model_best.pth
+
+  dataset_path: ./dataset/test/images
+  result_dir: ./results/predict
+
+  figsize: [10, 10]
+  probability_threshold: 0.5  # 확률이 0.5 이상인 것만 시각화
+  alpha: 0.8                  # 마스크 투명도
+  color: [0, 0, 0]            # 마스크 색상

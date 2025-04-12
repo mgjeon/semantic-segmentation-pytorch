@@ -1,0 +1,4 @@
+train_val_test : [0.8, 0.1, 0.1]  # Train, validation, test split ratio (sum must be 1)
+
+data_dir: ./data  # CamVid dataset
+dataset_dir: ./dataset  # Dataset directory
