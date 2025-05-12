@@ -117,8 +117,9 @@ def main(args):
 
     dataset_dir = config["dataset_dir"]
     dataset_dir = Path(dataset_dir)
-
-    shutil.rmtree(dataset_dir)
+    if dataset_dir.exists():
+        shutil.rmtree(dataset_dir)
+    dataset_dir.mkdir(parents=True, exist_ok=True)
 
     train_image_dir = dataset_dir / "train" / "images"
     train_label_dir = dataset_dir / "train" / "masks"
