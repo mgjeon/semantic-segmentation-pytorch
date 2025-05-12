@@ -7,7 +7,7 @@ uv sync
 
 ## Dataset
 
-You can use [CVAT](https://github.com/cvat-ai/cvat) to annotate images and export them as [CamVid format](https://docs.cvat.ai/docs/manual/advanced/formats/format-camvid/)
+You can use [CVAT](https://github.com/cvat-ai/cvat) to annotate images and export them as [CamVid format](https://docs.cvat.ai/docs/manual/advanced/formats/format-camvid/). You can download sample balloon dataset using `python download_dataset.py`.
 
 ```
 data_dir
